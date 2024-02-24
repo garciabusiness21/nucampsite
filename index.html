@@ -30,6 +30,9 @@
                     <h1>Nucamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
+                <div class="col-md-4 col-xl-2 align-self-center mt-4">
+                        <a class="btn btn-info text-white my-auto" href="#reserveForm">Reserve Campsite</a>
+                </div>
             </div> 
         </div>
     </header>
@@ -77,9 +80,17 @@
                 <h2>Featured Campsites</h2>
             </div>
             <div class="col">
-                <h3>React Lake Campground</h3>
-                <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                <div class="d-flex">
+                    <div class="align-self-center">
+                        <h3>React Lake Campground</h3>
+                        <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                    </div>
+                    <img class="me-3 img-thumbnail" src="img/react-lake-thumb.jpg" />
+                </div>
             </div>
+            
+                
+                
         </section>
 
 		<!-- partner section -->
@@ -97,7 +108,42 @@
                 </div>
             </div>
         </section>
-        
+        <section class="row row-content">
+            <div class="col-sm-9 mx-auto">
+                <div class="card">
+                    <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
+                    <div class="card-body">
+                        <form id="reserveForm">
+                            <div class="row">
+                                <label class="col-form-label col-sm-4 my-2" for="nucampers">Number of campers:</label>
+                                <div class="col">
+                                    <select class="form-select" id="nucampers">
+                                        <option>Select...</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label class="col-form-label col-sm-4 my-2" for="date">Date:</label>
+                                <div class="col">
+                                    <input class="form-control" type="date" id="date" placeholder="mm-dd-yyyy">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col my-2">
+                                    <button class="btn btn-primary" type="submit">Search</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- footer -->
